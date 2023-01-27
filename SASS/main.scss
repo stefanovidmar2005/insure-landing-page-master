@@ -1,0 +1,105 @@
+@import "variables";
+.main {
+  padding: 8rem 3rem;
+  .article {
+    text-align: center;
+    font-family: $font-family-Dm;
+    &__heading {
+      position: relative;
+      color: #000;
+      font-size: 4rem;
+      // font-weight: $font-weight-700;
+      letter-spacing: 2px;
+      margin-bottom: 6rem;
+      &::before {
+        content: " ";
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        top: -30%;
+        width: 40%;
+        transform: translate(-50%, -50%);
+        border-top: 1px solid #000;
+      }
+    }
+    &__cards {
+      &-card {
+        img {
+          margin-bottom: 2.5rem;
+        }
+        h3 {
+          font-size: 2.5rem;
+          margin-bottom: 1.5rem;
+        }
+        p {
+          font-family: $font-family-Karla;
+          color: #747476;
+          font-size: 1.6rem;
+          // padding: 0 3rem;
+          line-height: 1.5;
+          margin-bottom: 5rem;
+        }
+      }
+    }
+  }
+  //   FIRST ARTICLE
+  .article {
+    text-align: center;
+    font-family: $font-family-Dm;
+    &__heading {
+      position: relative;
+      color: #000;
+      font-size: 4rem;
+      // font-weight: $font-weight-700;
+      letter-spacing: 2px;
+      margin-bottom: 6rem;
+      &::before {
+        content: " ";
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        top: -30%;
+        width: 40%;
+        transform: translate(-50%, -50%);
+        border-top: 1px solid #000;
+      }
+    }
+    &__cards {
+      &-card {
+        img {
+          margin-bottom: 2.5rem;
+        }
+        h3 {
+          font-size: 2.5rem;
+          margin-bottom: 1.5rem;
+        }
+        p {
+          font-family: $font-family-Karla;
+          color: #747476;
+          font-size: 1.6rem;
+          // padding: 0 3rem;
+          line-height: 1.5;
+          margin-bottom: 5rem;
+        }
+      }
+    }
+  }
+  //   Second Article
+  .article-2 {
+    background-color: $primary-clr-violet;
+    padding: 8rem 3rem;
+    text-align: center;
+    background-image: url("/images/bg-pattern-how-we-work-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 220%;
+    background-position: top;
+
+    h2 {
+      font-family: $font-family-Dm;
+      font-size: 4rem;
+      color: #fff;
+      margin-bottom: 3rem;
+      line-height: 1.1;
+    }
+  }
+}

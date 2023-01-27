@@ -1,0 +1,56 @@
+@import "variables.scss";
+:root {
+  font-size: 62.5%;
+}
+html {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+// Component
+
+.cta {
+  font-family: $font-family-Karla;
+  letter-spacing: 3px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.cta:hover {
+  background-color: #fff;
+  color: #000;
+}

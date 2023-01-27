@@ -1,0 +1,76 @@
+@import "variables";
+@import "mixins";
+
+// mobile navigation
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2.5rem;
+  ul {
+    display: none;
+  }
+  .hamburger {
+    position: relative;
+    height: 3px;
+    width: 2rem;
+    background-color: #000;
+  }
+  .hamburger::before {
+    content: "";
+    height: 3px;
+    width: 2rem;
+    background-color: #000;
+    position: absolute;
+    top: -0.8rem;
+  }
+  .hamburger::after {
+    content: "";
+    height: 3px;
+    width: 2rem;
+    background-color: #000;
+    position: absolute;
+    top: 0.8rem;
+  }
+}
+// Header Mobile
+
+.header {
+  background-color: $primary-clr-violet;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem 3rem;
+    text-align: center;
+    color: #fff;
+    h1 {
+      font-size: 4.5rem;
+      line-height: 1;
+      margin-bottom: 1.5rem;
+      font-family: $font-family-Dm;
+    }
+    p {
+      font-size: $default-font-size;
+      font-family: $font-family-Karla;
+      line-height: 1.5;
+      margin-bottom: 3rem;
+      color: $secondary-color-light-gray;
+    }
+    button {
+      font-family: $font-family-Karla;
+      letter-spacing: 3px;
+      background-color: transparent;
+      border: 2px solid #fff;
+      padding: 10px 25px;
+      text-transform: uppercase;
+      color: #fff;
+      transition: all 0.3s ease-in-out;
+    }
+    button:hover {
+      background-color: #fff;
+      color: #000;
+    }
+  }
+}
