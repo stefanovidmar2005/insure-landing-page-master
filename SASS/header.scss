@@ -64,6 +64,9 @@
 
 .header {
   background-color: $primary-clr-violet;
+  img {
+    width: 100%;
+  }
   &__content {
     display: flex;
     flex-direction: column;

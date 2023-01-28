@@ -120,6 +120,9 @@ img {
 .header {
   background-color: hsl(256deg, 26%, 20%);
 }
+.header img {
+  width: 100%;
+}
 .header__content {
   display: flex;
   flex-direction: column;
