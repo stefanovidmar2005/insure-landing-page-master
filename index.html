@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="style.css" />
 
     <title>Frontend Mentor | Insure landing page</title>
+    <script src="Javascript/app.js" defer></script>
   </head>
   <body>
     <nav class="navigation">
@@ -31,7 +32,12 @@
         src="images/logo.svg"
         alt="naviagtion Logo"
       />
-      <ul>
+      <!-- <div class="hamburger"></div> -->
+      <img src="images/icon-hamburger.svg" class="hamburger" alt="" />
+    </nav>
+    <!-- Mobile Look -->
+    <div class="overlay">
+      <ul class="mobile__navigation hidden">
         <li>
           <a href="#">how we work</a>
         </li>
@@ -45,8 +51,8 @@
           <a href="#" class="navigation__active"> view plans</a>
         </li>
       </ul>
-      <div class="hamburger"></div>
-    </nav>
+    </div>
+
     <header class="header">
       <img src="images/image-intro-mobile.jpg" alt="" />
       <div class="header__content">
@@ -95,6 +101,74 @@
         <button class="cta">How we work</button>
       </article>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer__illustration"></div>
+      <div class="socials">
+        <img src="images/logo.svg" alt="" />
+        <div class="socials__icons">
+          <img src="images/icon-facebook.svg" alt="" />
+          <img src="images/icon-twitter.svg" alt="" />
+          <img src="images/icon-pinterest.svg" alt="" />
+          <img src="images/icon-instagram.svg" alt="" />
+        </div>
+      </div>
+      <div class="footer__links">
+        <ul>
+          <h4>Our Company</h4>
+          <li>
+            <a href="#">How we work</a>
+          </li>
+          <li>
+            <a href="#">why insure?</a>
+          </li>
+          <li>
+            <a href="#">check price</a>
+          </li>
+          <li>
+            <a href="#">reviews</a>
+          </li>
+        </ul>
+
+        <ul>
+          <h4>Help me</h4>
+          <li>
+            <a href="#">faq</a>
+          </li>
+          <li>
+            <a href="#">terms of use</a>
+          </li>
+          <li>
+            <a href="#">privacy policy</a>
+          </li>
+          <li>
+            <a href="#">cookies</a>
+          </li>
+        </ul>
+        <ul>
+          <h4>Contact</h4>
+          <li>
+            <a href="#">sales</a>
+          </li>
+          <li>
+            <a href="#">support</a>
+          </li>
+          <li>
+            <a href="#">live chat</a>
+          </li>
+        </ul>
+        <ul>
+          <h4>others</h4>
+          <li>
+            <a href="#">careers</a>
+          </li>
+          <li>
+            <a href="#">press</a>
+          </li>
+          <li>
+            <a href="#">licenses</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

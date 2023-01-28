@@ -1,0 +1,70 @@
+@import "variables";
+.footer {
+  background-color: $secondary-color-light-gray;
+  padding: 8rem 3rem;
+  background-image: url("/images/bg-pattern-footer-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: top;
+  &__illustration {
+  }
+  .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    &__icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid #d9d9d9;
+      width: 100%;
+      margin-bottom: 3rem;
+    }
+  }
+  &__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    gap: 3rem;
+    h4 {
+      font-family: $font-family-Karla;
+      margin-bottom: 3rem;
+      font-size: 1.6rem;
+      color: $secondary-color-gray-violet;
+      font-weight: $font-weight-700;
+      letter-spacing: 2px;
+    }
+    a {
+      font-family: $font-family-Karla;
+      font-weight: $font-weight-700;
+      color: $primary-clr-violet;
+      display: inline-block;
+      text-decoration: none;
+      margin-bottom: 1.5rem;
+      font-size: 1.4rem;
+      position: relative;
+      transition: all 0.3s ease-in-out;
+      padding-bottom: 1rem;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0%;
+        border-bottom: 3px solid transparent;
+        transition: all 0.3s ease-in-out;
+      }
+      &:hover::before {
+        width: 100%;
+        border-color: $primary-clr-violet;
+      }
+    }
+  }
+}
