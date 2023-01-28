@@ -15,7 +15,7 @@ hamburgerBtn.addEventListener("click", () => {
   menu.classList.toggle("hidden");
   body.classList.toggle("no-scroll");
   // changes the image source
-  if (hamburgerBtn.src === `http://${host}/images/icon-hamburger.svg`) {
+  if (hamburgerBtn.src === `https://${host}/images/icon-hamburger.svg`) {
     hamburgerBtn.src = "../images/icon-close.svg";
   } else {
     hamburgerBtn.src = "../images/icon-hamburger.svg";
