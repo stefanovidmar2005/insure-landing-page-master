@@ -11,6 +11,45 @@
 .no-scroll {
   overflow: hidden;
 }
+.hamburger {
+  @include for-desktop() {
+    display: none;
+  }
+}
+.desktop__navigation {
+  display: none;
+  @include for-desktop() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    a {
+      position: relative;
+      display: inline-block;
+      color: $secondary-color-gray-violet;
+      font-family: $font-family-Karla;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: $font-weight-700;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+    .navigation__desktop-active {
+      color: #333;
+      border: 2px solid #333;
+      padding: 1rem 3.25rem;
+      &:hover {
+        opacity: 1;
+        background-color: #333;
+        color: #fff;
+        transform: skew(-15deg);
+      }
+    }
+  }
+}
 .mobile__navigation {
   z-index: 100;
   height: 100vh;
@@ -19,7 +58,10 @@
   flex-direction: column;
   align-items: center;
   padding-top: 5rem;
-  gap: 3rem;
+  gap: 3.5rem;
+  @include for-desktop() {
+    display: none;
+  }
 
   li {
     animation-name: slideInFromLeft;
@@ -59,13 +101,39 @@
   align-items: center;
   padding: 2rem 2.5rem;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  @include for-desktop() {
+    padding: 3rem $desktop-container;
+  }
 }
 // Header Mobile
 
 .header {
   background-color: $primary-clr-violet;
-  img {
+  @include for-desktop() {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 3rem $desktop-container;
+  }
+  &__desktop-img {
+    display: none;
+    @include for-desktop() {
+      display: initial;
+      width: 45%;
+    }
+  }
+  &__mobile-img {
     width: 100%;
+    @include for-desktop() {
+      display: none;
+    }
+  }
+  .flex {
+    @include for-desktop() {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60%;
+    }
   }
   &__content {
     display: flex;
@@ -77,11 +145,24 @@
     color: #fff;
     max-width: 70rem;
     margin: 0 auto;
+    @include for-desktop() {
+      display: initial;
+      text-align: left;
+      padding: 0;
+      max-width: initial;
+      margin-right: 20rem;
+    }
     h1 {
       font-size: 4.5rem;
       line-height: 1;
       margin-bottom: 2.5rem;
       font-family: $font-family-Dm;
+      @include for-desktop() {
+        text-align: left;
+        font-size: 6.5rem;
+        line-height: 1.2;
+        margin-bottom: 3rem;
+      }
     }
     p {
       font-size: $default-font-size;
@@ -89,8 +170,13 @@
       line-height: 1.5;
       margin-bottom: 3rem;
       color: $secondary-color-light-gray;
+      @include for-desktop() {
+        font-size: 1.8rem;
+        line-height: 1.7;
+      }
     }
-    button {
+    &-cta {
+      display: inline-block;
       font-family: $font-family-Karla;
       letter-spacing: 3px;
       background-color: transparent;
@@ -99,10 +185,12 @@
       text-transform: uppercase;
       color: #fff;
       transition: all 0.3s ease-in-out;
-    }
-    button:hover {
-      background-color: #fff;
-      color: #000;
+      cursor: pointer;
+      font-size: 1.6rem;
+      &:hover {
+        background-color: #fff;
+        color: #000;
+      }
     }
   }
 }

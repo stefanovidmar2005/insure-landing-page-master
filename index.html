@@ -32,7 +32,20 @@
         src="images/logo.svg"
         alt="naviagtion Logo"
       />
-      <!-- <div class="hamburger"></div> -->
+      <ul class="desktop__navigation">
+        <li>
+          <a href="#">how we work</a>
+        </li>
+        <li>
+          <a href="#">blog</a>
+        </li>
+        <li>
+          <a href="#">account</a>
+        </li>
+        <li>
+          <a href="#" class="navigation__desktop-active"> view plans</a>
+        </li>
+      </ul>
       <img src="images/icon-hamburger.svg" class="hamburger" alt="" />
     </nav>
     <!-- Mobile Look -->
@@ -54,15 +67,26 @@
     </div>
 
     <header class="header">
-      <img src="images/image-intro-mobile.jpg" alt="" />
-      <div class="header__content">
-        <h1>Humanizing your insurance.</h1>
-        <p>
-          Get your life insurance coverage easier and faster. We blend our
-          expertise and technology to help you find the plan that’s right for
-          you. Ensure you and your loved ones are protected.
-        </p>
-        <button class="header__content-cta cta">View Plans</button>
+      <img
+        src="images/image-intro-mobile.jpg"
+        class="header__mobile-img"
+        alt=""
+      />
+      <img
+        src="images/image-intro-desktop.jpg"
+        alt=""
+        class="header__desktop-img"
+      />
+      <div class="flex">
+        <div class="header__content">
+          <h1>Humanizing your insurance.</h1>
+          <p>
+            Get your life insurance coverage easier and faster. We blend our
+            expertise and technology to help you find the plan that’s right for
+            you. Ensure you and your loved ones are protected.
+          </p>
+          <a class="header__content-cta">View Plans</a>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -79,7 +103,7 @@
           </div>
           <div class="article__cards-card">
             <img src="images/icon-affordable-prices.svg" alt="card 2 image" />
-            <h3>Affordale Prices</h3>
+            <h3>Affordable Prices</h3>
             <p>
               We don’t want you worrying about high monthly costs. Our prices
               may be low, but we still offer the best coverage possible.
@@ -97,8 +121,10 @@
       </article>
       <article class="article-2">
         <div class="article-2-illustration"></div>
-        <h2>Find out more about how we work</h2>
-        <button class="cta">How we work</button>
+        <div class="article-2__flex">
+          <h2>Find out more about how we work</h2>
+          <button class="cta article-2__btn">How we work</button>
+        </div>
       </article>
     </main>
     <footer class="footer">
