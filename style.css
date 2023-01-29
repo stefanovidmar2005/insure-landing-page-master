@@ -131,11 +131,13 @@ img {
   padding: 8rem 3rem;
   text-align: center;
   color: #fff;
+  max-width: 70rem;
+  margin: 0 auto;
 }
 .header__content h1 {
   font-size: 4.5rem;
   line-height: 1;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
   font-family: "DM Serif Display", serif;
 }
 .header__content p {
@@ -216,7 +218,7 @@ img {
 .main .article__heading {
   position: relative;
   color: #000;
-  font-size: 4rem;
+  font-size: clamp(4rem, 10vw, 5rem);
   letter-spacing: 2px;
   margin-bottom: 6rem;
 }
@@ -230,17 +232,21 @@ img {
   transform: translate(-50%, -50%);
   border-top: 1px solid #000;
 }
+.main .article__cards-card {
+  margin: 0 auto;
+  max-width: 40rem;
+}
 .main .article__cards-card img {
   margin-bottom: 2.5rem;
 }
 .main .article__cards-card h3 {
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 8vw, 4rem);
   margin-bottom: 1.5rem;
 }
 .main .article__cards-card p {
   font-family: "Karla", sans-serif;
   color: #747476;
-  font-size: 1.6rem;
+  font-size: clamp(1.3rem, 4.3vw, 1.8rem);
   line-height: 1.5;
   margin-bottom: 5rem;
 }
